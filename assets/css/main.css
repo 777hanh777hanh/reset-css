@@ -150,6 +150,7 @@ input,
 [tabindex] {
   outline: none;
   border: none;
+  background: transparent;
 }
 
 a {
@@ -373,14 +374,136 @@ html {
 body {
   font-family: "JetBrains Mono", monospace;
   font-size: 1.6rem;
-  min-height: 100vh;
   line-height: 1.5;
+  background-color: rgba(255, 64, 129, 0.1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+}
+
+.heading {
+  color: #3f3f3f;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+.heading--small {
+  font-size: 2rem;
+}
+
+.paragraph {
+  color: #3f3f3f;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.paragraph--thin {
+  font-weight: 200;
+}
+.paragraph--small {
+  font-size: 1.2rem;
 }
 
 .header__title {
   font-size: 4.2rem;
+  text-transform: uppercase;
   text-align: center;
   color: #ff4081;
+}
+
+.main {
+  flex: 1;
+  margin-top: 3rem;
+  z-index: 1;
+}
+.main .paragraph {
+  margin-top: 1rem;
+}
+.main .block-code {
+  position: relative;
+  margin-top: 3rem;
+  padding: 1.2rem;
+  width: 100%;
+  background-color: #282828;
+  color: chocolate;
+  border-radius: 0.4rem;
+  overflow: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+.main .code > * {
+  display: inline-block;
+}
+.main .mark {
+  color: #ff4081;
+}
+.main .property {
+  color: #f2f2f2;
+}
+.main .value {
+  color: chocolate;
+}
+.main .text {
+  color: #00a100;
+}
+.main .copy-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: rgba(242, 242, 242, 0.3);
+  transition: color 0.2s ease-in-out;
+}
+.main .copy-btn:hover {
+  cursor: pointer;
+  color: #f2f2f2;
+}
+.main .scroll-top {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 5;
+  bottom: 5rem;
+  right: 5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid #ff4081;
+  color: #3f3f3f;
+  transition: 0.2s linear;
+  transition-property: color background-color;
+}
+.main .scroll-top:hover {
+  cursor: pointer;
+  background-color: rgba(255, 64, 129, 0.5);
+  color: #f2f2f2;
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+.footer .social {
+  justify-content: center;
+}
+.footer .social__link {
+  color: #3f3f3f;
+  transition: 0.3s ease;
+  transition-property: color underline;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.5rem;
+}
+.footer .social__link:hover {
+  color: #ff4081;
+  text-decoration-color: inherit;
+}
+.footer__copyright {
+  margin-top: 3rem;
+  user-select: none;
+  pointer-events: none;
 }
 
 /* Grid System */

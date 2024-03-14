@@ -10,6 +10,23 @@
         <div class="container">
             <!-- Header -->
             <header class="header">
+                <!-- <div class="row">
+                    <div class="col">
+                        <nav class="navbar">
+                            <ul class="navbar__list">
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__link">Home</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__link">About</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__link">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div> -->
                 <div class="row">
                     <div class="col-10 offset-1">
                         <h1 class="header__title">RESET CSS</h1>
@@ -18,16 +35,122 @@
             </header>
             <!-- Main -->
             <main class="main">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <h3 class="heading">What is Reset CSS</h3>
+                        <p class="paragraph">
+                            Reset CSS is a technique in web development used to remove default CSS values for
+                            HTML elements. The goal of Reset CSS is to make HTML elements look the same across
+                            different browsers by removing any differences in default display styles set by
+                            browsers.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <pre class="block-code">
+                            <button class="copy-btn" id="copy-code">copy</button>
+                            <code class="code">
+    *,
+    ::after,
+    ::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,
+    p,blockquote,pre,a,abbr,acronym,address,big,cite,code,
+    del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,
+    sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,
+    fieldset,form,label,legend,table,caption,
+    tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,
+    embed,figure,figcaption,footer,header,hgroup,menu,nav,output,
+    ruby,section,summary,time,mark,audio,video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    article,aside,details,figcaption,figure,footer,
+    header,hgroup,menu,nav,section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol,ul {
+        list-style: none;
+    }
+    blockquote,q {
+        quotes: none;
+    }
+    blockquote:before,
+    blockquote:after,
+    q:before,q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    button,input,tabindex],select,textarea {
+        font-family: inherit;
+        font-size: 100%;
+    }
+    button,input,
+    [tabindex] {
+        outline: none;
+        border: none;
+    }
+    a {
+        text-decoration: none;
+    }                                                            
+                            </code>
+                        </pre>
+                    </div>
+                </div>
 
+                <!-- scroll-top -->
+                <button id="scroll-top" class="scroll-top">Top</button>
             </main>
 
             <!-- Footer -->
             <footer class="footer">
+                <div class="social row g-3 g-md-6">
+                    <a
+                        href="https://github.com/777hanh777hanh"
+                        rel="noreferrer"
+                        class="social__link"
+                        target="_blank"
+                        >Github</a
+                    >
+                    <a
+                        href="https://www.facebook.com/777hanh"
+                        rel="noreferrer"
+                        class="social__link"
+                        target="_blank"
+                        >Facebook</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/thien-thanh-tran-187699227/"
+                        rel="noreferrer"
+                        target="_blank"
+                        class="social__link"
+                        >LinkedIn</a
+                    >
+                </div>
                 <div class="row">
-                    <div class="">
-                        <p class="footer__text">© 777hanh777hanh</p>
+                    <div class="col">
+                        <p class="footer__copyright paragraph paragraph--small">© 777hanh777hanh</p>
                     </div>
                 </div>
+            </footer>
         </div>
+
+        <!-- script -->
+        <script src="./assets/js/main.js" defer></script>
     </body>
 </html>
