@@ -1,9 +1,11 @@
 const FILE_CSS_NAME = 'reset.css';
+const CDN_LINK = 'https://cdn.jsdelivr.net/gh/777hanh777hanh/';
+const REPO_NAME = 'reset-css';
 
 const copyButton = document.querySelectorAll('.copy-btn');
 const urlResetCSS = {
-    minified: 'https://cdn.jsdelivr.net/gh/777hanh777hanh/reset-css/assets/css/resetcss/reset.min.css',
-    original: 'https://cdn.jsdelivr.net/gh/777hanh777hanh/reset-css/assets/css/resetcss/reset.css',
+    minified: CDN_LINK + REPO_NAME + '/assets/css/resetcss/reset.min.css',
+    original: CDN_LINK + REPO_NAME + '/assets/css/resetcss/reset.css',
     downloaded: './assets/css/resetcss/reset.min.css',
 };
 
