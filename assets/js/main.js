@@ -4,7 +4,7 @@ const copyButton = document.querySelectorAll('.copy-btn');
 const urlResetCSS = {
     minified: 'https://cdn.jsdelivr.net/gh/777hanh777hanh/reset-css/assets/css/resetcss/reset.min.css',
     original: 'https://cdn.jsdelivr.net/gh/777hanh777hanh/reset-css/assets/css/resetcss/reset.css',
-    downloaded: '/assets/css/resetcss/reset.css',
+    downloaded: './assets/css/resetcss/reset.min.css',
 };
 
 const handleCopy = () => {
