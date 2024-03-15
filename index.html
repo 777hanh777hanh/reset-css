@@ -10,23 +10,6 @@
         <div class="container">
             <!-- Header -->
             <header class="header">
-                <!-- <div class="row">
-                    <div class="col">
-                        <nav class="navbar">
-                            <ul class="navbar__list">
-                                <li class="navbar__item">
-                                    <a href="#" class="navbar__link">Home</a>
-                                </li>
-                                <li class="navbar__item">
-                                    <a href="#" class="navbar__link">About</a>
-                                </li>
-                                <li class="navbar__item">
-                                    <a href="#" class="navbar__link">Contact</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div> -->
                 <div class="row">
                     <div class="col-10 offset-1">
                         <h1 class="header__title">RESET CSS</h1>
@@ -35,17 +18,48 @@
             </header>
             <!-- Main -->
             <main class="main">
-                <div class="row">
-                    <div class="col-10 offset-1">
-                        <h3 class="heading">What is Reset CSS</h3>
-                        <p class="paragraph">
-                            Reset CSS is a technique in web development used to remove default CSS values for
-                            HTML elements. The goal of Reset CSS is to make HTML elements look the same across
-                            different browsers by removing any differences in default display styles set by
-                            browsers.
-                        </p>
+                <section class="section">
+                    <div class="row">
+                        <div class="col-10 offset-1">
+                            <h3 class="heading">What is Reset CSS</h3>
+                            <p class="paragraph">
+                                Reset CSS is a technique in web development used to remove default CSS values
+                                for HTML elements. The goal of Reset CSS is to make HTML elements look the
+                                same across different browsers by removing any differences in default display
+                                styles set by browsers.
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </section>
+
+                <section class="section">
+                    <div class="row">
+                        <div class="col-10 offset-1">
+                            <h3 class="heading">Why Reset CSS</h3>
+                            <p class="paragraph">
+                                Different browsers have different default styles for HTML elements. For
+                                example, the default margin and padding for the body element in Chrome is 8px,
+                                while in Firefox it is 16px. This can cause a lot of problems when you want to
+                                make your website look the same across different browsers. Reset CSS is used
+                                to remove these differences and make your website look the same across
+                                different browsers.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="cta">
+                    <div class="row text-center g-5">
+                        <div class="col">
+                            <button type="button" class="cta__item download_file">Download</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="cta__item copy_original">Original File</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="cta__item copy_minified">Minified File</button>
+                        </div>
+                    </div>
+                </section>
                 <div class="row">
                     <div class="col-10 offset-1">
                         <pre class="block-code">
@@ -113,13 +127,27 @@
                     </div>
                 </div>
 
+                <section class="cta">
+                    <div class="row text-center g-5">
+                        <div class="col">
+                            <button type="button" class="cta__item download_file">Download</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="cta__item copy_original">Original File</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="cta__item copy_minified">Minified File</button>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- scroll-top -->
                 <button id="scroll-top" class="scroll-top">Top</button>
             </main>
 
             <!-- Footer -->
             <footer class="footer">
-                <div class="social row g-3 g-md-6">
+                <div class="social row g-3 g-md-6 text-center">
                     <a
                         href="https://github.com/777hanh777hanh"
                         rel="noreferrer"
@@ -142,7 +170,7 @@
                         >LinkedIn</a
                     >
                 </div>
-                <div class="row">
+                <div class="row text-center">
                     <div class="col">
                         <p class="footer__copyright paragraph paragraph--small">© 777hanh777hanh</p>
                     </div>
